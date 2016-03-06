@@ -14,18 +14,24 @@
         overflow: hidden;
         max-width: 400px;
       }
+	  
     </style>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/scrollstyle.css" rel="stylesheet">
+    <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+
+    
+    <script> $.material.init() </script>
   </head>
   <body>
     <div style="width:560px" align="center">
       <div style="height:25px"></div>
-      <button type="button" class="btn btn-danger" id="0">Protanopia</button>
-      <button type="button" class="btn btn-success" id="1">Deuteranopia</button>
-      <button type="button" class="btn btn-primary" id="2">Tritanopia</button>
-      <button type="button" class="btn btn-warning" style="background-color:black; border-color:black;" id="3">Full Color Blind</button>
-      <button type="button" class="btn btn-default" id="4">Standard</button>
+      <button type="button" class="btn btn-danger btn-raised" id="0">Protanopia</button>
+      <button type="button" class="btn btn-success btn-raised" id="1">Deuteranopia</button>
+      <button type="button" class="btn btn-primary btn-raised" id="2">Tritanopia</button>
+      <button type="button" class="btn btn-warning btn-raised" style="background-color:black; border-color:black;" id="3">Full Color Blind</button>
+      <button type="button" class="btn btn-default btn-raised" id="4">Standard</button>
       <div style="height:15px"></div>
     </div> 
     
@@ -60,5 +66,8 @@
     <div style="height:70px;" align="center"></div>
     
     <script src="options.js"></script>
+    <script src="js/ripples.js"> </script>
+    <script src="js/material.js"> </script>
+
   </body>
 </html>
