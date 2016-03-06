@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Irys</title>
+    <style>
+      body {
+        font-size: 100%;
+      }
+      #status {
+        
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/scrollstyle.css" rel="stylesheet">
+  </head>
+  <body>
+    <div style="width:560px" align="center">
+      <div style="height:25px"></div>
+      <button type="button" class="btn btn-danger" id="0">Protanopia</button>
+      <button type="button" class="btn btn-success" id="1">Deuteranopia</button>
+      <button type="button" class="btn btn-primary" id="2">Tritanopia</button>
+      <button type="button" class="btn btn-warning" style="background-color:black; border-color:black;" id="3">Full Color Blind</button>
+      <button type="button" class="btn btn-default" id="4">Standard</button>
+      <div style="height:15px"></div>
+    </div> 
+    
+    <div style="width:560px" align="center">
+      <label>Near-Sightedness</label>
+      <div style="width:530px">
+          <div style="overflow:auto; width:500px; float:left;" id="scrollbar" class="bar1">
+            <img src="white.png" />
+          </div> 
+          <div style="float:right;">
+            <div style="height:18px;"></div>
+            <p id="popup">0</p>
+          </div>
+      </div>
+    </div>
+    <div style="height:40px;" align="center"></div>
+    
+    <hr>
+    
+    <div style="width:560px" align="center">
+      <label>Personalized Color Assistance</label>
+      <div style="width:530px">
+          <div style="overflow:auto; width:500px; float:left;" id="cbh" class="bar2">
+            <img src="white.png" />
+          </div> 
+          <div style="float:right;">
+            <div style="height:18px;"></div>
+            <p id="cphdata">0</p>
+          </div>
+      </div>
+    </div>
+    <div style="height:70px;" align="center"></div>
+    
+    <script src="options.js"></script>
+  </body>
+</html>
